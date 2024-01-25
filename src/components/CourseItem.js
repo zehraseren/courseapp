@@ -4,7 +4,7 @@ import { BsChevronUp, BsChevronDown } from "react-icons/bs";
 function CourseItem({ id, title, price, img, quantity }) {
   return (
     <div>
-      <img src="{img}" alt="" />
+      <img src={img} alt="" />
       <div>
         <h4>{title}</h4>
         <h4>{price}₺</h4>
@@ -18,7 +18,7 @@ function CourseItem({ id, title, price, img, quantity }) {
           </button>
         </div>
       </div>
-      <button className="btn btn-warning">Sil</button>
+      <button>Sil</button>
     </div>
   );
 }

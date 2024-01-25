@@ -8,19 +8,19 @@ function CourseList() {
   return (
     <>
       {quantity < 1 ? (
-        <section>
+        <section className="cart">
           <header>
             <h2>Sepetim</h2>
             <h4>Bomboş</h4>
           </header>
         </section>
       ) : (
-        <section>
+        <section className="cart">
           <header>
             <h2>Sepetim</h2>
             <div>
               {cartItems.map((item) => {
-                return <CourseItem {...item} />;
+                return <CourseItem key={item.id} {...item} />;
               })}
             </div>
             <footer>
@@ -30,7 +30,7 @@ function CourseList() {
                   Toplam Tutar <span>{total}₺</span>
                 </h4>
               </div>
-              <button>Temizle</button>
+              <button className="cartClearButton">Temizle</button>
             </footer>
           </header>
         </section>

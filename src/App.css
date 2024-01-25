@@ -22,3 +22,15 @@
   text-align: center;
   border-radius: 50%;
 }
+
+.cart {
+  text-align: center;
+}
+
+.cartClearButton {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: blue;
+  color: white;
+}
