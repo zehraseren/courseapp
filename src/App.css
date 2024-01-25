@@ -1,3 +1,7 @@
+.App {
+  margin-bottom: 30px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -33,4 +37,32 @@
   border-radius: 30px;
   background-color: blue;
   color: white;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 150px;
+}
+
+.cartInfo {
+  text-align: right;
+}
+
+.cartQuantityButton {
+  border: none;
+  background-color: white;
+}
+
+.cartQuantityP {
+  margin-right: 8px;
+}
+
+.cartDeleteButton {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: red;
+  color: white;
+  margin-top: 50px;
 }

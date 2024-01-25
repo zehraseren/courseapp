@@ -27,7 +27,7 @@ function CourseList() {
               <hr />
               <div>
                 <h4>
-                  Toplam Tutar <span>{total}₺</span>
+                  Toplam Tutar: <span>{total}₺</span>
                 </h4>
               </div>
               <button className="cartClearButton">Temizle</button>
