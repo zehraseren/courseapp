@@ -1,7 +1,11 @@
 import React from "react";
 import { BsChevronUp, BsChevronDown } from "react-icons/bs";
+import { useDispatch } from "react-redux";
+import { removeItem } from "../control/cartSlice";
 
 function CourseItem({ id, title, price, img, quantity }) {
+  const dispatch = useDispatch();
+  
   return (
     <div className="cartItem">
       <img src={img} alt="" />
@@ -17,7 +21,14 @@ function CourseItem({ id, title, price, img, quantity }) {
             <BsChevronDown />
           </button>
         </div>
-        <button className="cartDeleteButton">Sil</button>
+        <button
+          className="cartDeleteButton"
+          onClick={() => {
+            dispatch(removeItem(id));
+          }}
+        >
+          Sil
+        </button>
       </div>
     </div>
   );
