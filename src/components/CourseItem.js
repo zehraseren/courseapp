@@ -1,11 +1,11 @@
 import React from "react";
 import { BsChevronUp, BsChevronDown } from "react-icons/bs";
 import { useDispatch } from "react-redux";
-import { removeItem } from "../control/cartSlice";
+import { removeItem, increase, decrease } from "../control/cartSlice";
 
 function CourseItem({ id, title, price, img, quantity }) {
   const dispatch = useDispatch();
-  
+
   return (
     <div className="cartItem">
       <img src={img} alt="" />
@@ -14,11 +14,11 @@ function CourseItem({ id, title, price, img, quantity }) {
         <h4>{price}₺</h4>
         <div>
           <button className="cartQuantityButton">
-            <BsChevronUp />
+            <BsChevronUp onClick={() => dispatch(increase(id))} />
           </button>
           <p className="cartQuantityP">{quantity}</p>
           <button className="cartQuantityButton">
-            <BsChevronDown />
+            <BsChevronDown onClick={() => dispatch(decrease(id))}/>
           </button>
         </div>
         <button
