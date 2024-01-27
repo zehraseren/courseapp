@@ -8,7 +8,7 @@ function CourseItem({ id, title, price, img, quantity }) {
 
   return (
     <div className="cartItem">
-      <img src={img} alt="" />
+      <img src={img} alt="" className="cartImg"/>
       <div className="cartInfo">
         <h4>{title}</h4>
         <h4>{price}₺</h4>

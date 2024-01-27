@@ -27,7 +27,7 @@ function CourseList() {
             </div>
             <footer>
               <hr />
-              <div>
+              <div className="footer">
                 <h4>
                   Toplam Tutar: <span>{total}₺</span>
                 </h4>

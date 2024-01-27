@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFillBasketFill } from "react-icons/bs";
+import { FaCartShopping } from "react-icons/fa6";
 import { useSelector } from "react-redux";
 
 function Navbar() {
@@ -14,7 +14,7 @@ function Navbar() {
           <div className="itemsDiv">
             <p>{quantity}</p>
           </div>
-          <BsFillBasketFill className="itemsIcon" />
+          <FaCartShopping className="itemsIcon" size={25}/>
         </div>
       </div>
     </nav>
