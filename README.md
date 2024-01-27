@@ -1,4 +1,4 @@
-- Udemy'de [MCP Can Boz](https://www.canboz.com/)'un [Material UI - Tüm Yönleriyle Material UI Eğitimi](https://www.udemy.com/course/material-ui-egitimi/) eğitiminden esinlenerek böyle bir proje ortaya çıkardım.
+- Udemy'de [MCP Can Boz](https://www.canboz.com/)'un [React JS : Uygulamalı React JS -Redux Eğitimi](https://www.udemy.com/course/react-egitimi/) eğitiminden esinlenerek böyle bir proje ortaya çıkardım.
 - Projede Redux, React Icon, React Bootstrap kütüpheneleri kullanılmıştır.
 ***
 
